@@ -1,0 +1,488 @@
+{
+  "prompts": [
+    {
+      "meta_id": "1",
+      "input": "How do I choose the best vet for my pet dog?",
+      "parse_shot": "To choose the best vet, visit {url-petofy}. Now follow these steps:\n- Go to Consultant under Find services.\n- Select your city from the list.\n- Look for highly-rated vets who specialize in your pet's specific needs.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\n . If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "list",
+      "parse_generation_length": "{m}{n}",
+      "meta_context": "Pet owner seeking reliable veterinary care through Petofy.",
+      "meta_constraints": "Petofy, vet selection",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "url-petofy",
+                "path": "data/placeholders.json",
+                "idx": "url-petofy",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+                "placeholder": "m",
+                "path": "data/placeholders.json",
+                "idx": "atomic-values-val5",
+                "map":  "atomic-values"
+            }
+        
+      ],
+      "meta_generation_units": [
+        {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map":  "units"
+        }
+
+    ]
+    },
+    {
+      "meta_id": "2",
+      "input": "Is online consultation good for my pet?",
+     "parse_shot": "Online consultation could be a good option if you are unable to visit the clinic for routine check-ups and minor concerns. To find the best vet for your pet, please visit {vet-on-call-service}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide information and advice on the benefits of online consultation for pet owners. Encourage the pet parent to visit the Petofy link for more details. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User exploring online consultation benefits for their pet.",
+      "meta_constraints": "Online consultation, Petofy",
+       "meta_placeholders_urls": [
+            {
+                "placeholder": "vet-on-call-service",
+                "path": "data/placeholders.json",
+                "idx": "url-vet-on-call-service",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+        "meta_generation_atom_values": [
+            {
+                "placeholder": "m",
+                "path": "data/placeholders.json",
+                "idx": "atomic-values-val5",
+                "map":  "atomic-values"
+            }
+        
+      ],
+      "meta_generation_units": [
+        {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map":  "units"
+        }
+      ]
+    },
+    {
+      "meta_id": "3",
+      "input": "How to find vet with specific specialties on Petofy?",
+     "parse_shot": "To find a vet with specific expertise as per your pet's needs on Petofy, simply visit {url-petofy}. Now follow these steps:\n- Go to Consultant under Find services.\n- Select your city from the list.\n- Look for highly-rated vets who specialize in your pet's specific needs.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Guide the pet parent on how to find a vet with specific specialties on Petofy. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\nContinue in this step format up to the last step. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "list",
+      "parse_generation_length": "{m}{n}",
+      "meta_context": "User looking for a vet with specific expertise for their pet on Petofy.",
+      "meta_constraints": "Specialty vet, Petofy",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "url-petofy",
+                "path": "data/placeholders.json",
+                "idx": "url-petofy",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+        "meta_generation_atom_values": [
+            {
+                "placeholder": "m",
+                "path": "data/placeholders.json",
+                "idx": "atomic-values-val5",
+                "map":  "atomic-values"
+            }
+        
+      ],
+      "meta_generation_units": [
+        {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map":  "units"
+        }
+
+    ]
+    },
+    {
+      "meta_id": "4",
+      "input": "Can you advise me on preventive care for my pet?",
+     "parse_shot": "Preventive care for your pet is crucial. It should include vaccinations, a balanced diet, regular exercise, and check-ups. For personalized plans, consult a vet through {vet-on-call-service}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Offer advice on preventive care for the pet. Encourage the pet parent to visit the Petofy link for more details. Recommend consulting with a vet for a personalized plan. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User seeking advice on preventive care measures for their pet.",
+      "meta_constraints": "Preventive care, Petofy",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "vet-on-call-service",
+                "path": "data/placeholders.json",
+                "idx": "url-vet-on-call-service",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]  
+    },
+    {
+      "meta_id": "5",
+      "input": "What type of diet is best for my pet's breed and age?",
+     "parse_shot": "The ideal diet depends on your pet's breed, age, and overall health. You can consult with a vet through {vet-on-call-service}. They can provide expert advice to ensure your pet gets the nutrition it requires.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide guidance on determining the best diet for the pet based on its breed, age, and health. Suggest consulting with a vet for expert advice. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User seeking guidance on the dietary needs of their pet based on breed and age.",
+      "meta_constraints": "Pet diet, Consultation, Petofy",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "vet-on-call-service",
+                "path": "data/placeholders.json",
+                "idx": "url-vet-on-call-service",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "6",
+      "input": "My pet is unconscious, and it looks like it ate something strange. What should I do?",
+     "parse_shot": "Contact your vet immediately. You can also use our vet on-call service at {vet-on-call-service}. Provide details on the substance, and follow their guidance for prompt and appropriate care.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Advise the pet parent to contact their vet immediately for urgent concerns. Encourage the pet parent to visit the Petofy link for more details. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User facing an urgent situation with their pet.",
+      "meta_constraints": "Urgent care, Vet contact, Petofy",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "vet-on-call-service",
+                "path": "data/placeholders.json",
+                "idx": "url-vet-on-call-service",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "7",
+      "input": "What is the refund policy for the vet on-call service?",
+     "parse_shot": "The refund policy for the {vet-on-call-service} can be found on the {url-petofy} website. Please check the 'Terms and Conditions' section or reaching out to our customer support at {url-contact} for detailed information.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Direct the user to check the refund policy for the vet on-call service on the Petofy website. Suggest looking into the 'Terms and Conditions' section or contacting customer support for detailed information. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about the refund policy for the vet on-call service.",
+      "meta_constraints": "Refund policy, Petofy",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "vet-on-call-service",
+                "path": "data/placeholders.json",
+                "idx": "url-vet-on-call-service",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-petofy",
+                "path": "data/placeholders.json",
+                "idx": "url-petofy",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "8",
+      "input": "How can I book a vet appointment on Petofy?",
+     "parse_shot": "Booking a vet appointment on Petofy is easy. Visit {url-petofy}, go to Appointments, select your city, choose a vet, and pick a convenient time slot. Confirm your booking, and you're all set!",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Guide the user on how to book a vet appointment on Petofy. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\nContinue in this step format up to the last step. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "list",
+      "parse_generation_length": "{m}{n}",
+      "meta_context": "User looking to book a vet appointment on Petofy.",
+      "meta_constraints": "Vet appointment, Petofy",
+       "meta_placeholders_urls": [
+            {
+                "placeholder": "url-petofy",
+                "path": "data/placeholders.json",
+                "idx": "url-petofy",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "9",
+      "input": "What happens if I face internet connectivity issues during the call?",
+     "parse_shot": "If you face internet issues during the call, try reconnecting or switch to a more stable network. For further assistance, please connect our customer support at {url-petofy} or call us at {phone-call-support}",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide guidance on what to do if the user faces internet connectivity issues during a call. Respond in a clear and informative manner. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User concerned about potential internet issues during a vet on-call service call.",
+      "meta_constraints": "Internet connectivity, Vet on-call service",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "url-petofy",
+                "path": "data/placeholders.json",
+                "idx": "url-petofy",
+                "map":  "urls"
+            },
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_placeholders_phone-numbers": [
+            {
+                "placeholder": "phone-call-support",
+                "path": "data/placeholders.json",
+                "idx": "phone-call-support",
+                "map":  "phone-numbers"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+
+    },
+    {
+      "meta_id": "10",
+      "input": "What if I have poor network coverage during the call?",
+     "parse_shot": "Try to find a location with better network reception or moving to an area with a stronger signal.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide advice on what to do if the user experiences poor network coverage during a call. Respond in a helpful and concise manner. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length} ",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User seeking solutions for poor network coverage during a vet on-call service call.",
+      "meta_constraints": "Network coverage, Vet on-call service",
+      "meta_placeholders_urls": [
+
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "11",
+      "input": "Can I follow up with additional calls after the initial consultation?",
+     "parse_shot": "Our vet on-call service is designed to provide continuous support and guidance to pet owners. Feel free to follow up with additional calls as needed.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide information on the possibility of following up with additional calls after the initial consultation. Respond in an encouraging and informative manner. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about the option to have additional calls after the initial vet on-call service consultation.",
+      "meta_constraints": "Follow-up calls, Vet on-call service",
+      "meta_placeholders_urls": [
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    },
+    {
+      "meta_id": "12",
+      "input": "Can I get a prescription through the vet on-call service?",
+     "parse_shot": "You can obtain prescriptions through our vet on-call service. Our veterinarians will assess your pet's needs during the consultation, and if necessary, they will provide the required prescriptions for their well-being.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Confirm that users can get prescriptions through the vet on-call service. Respond in a clear and informative manner. If answer can not be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length} ",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about obtaining prescriptions through the vet on-call service.",
+      "meta_constraints": "Prescriptions, Vet on-call service",
+      "meta_placeholders_urls": [
+
+            {
+                "placeholder": "url-contact",
+                "path": "data/placeholders.json",
+                "idx": "url-contact",
+                "map":  "urls"
+            }
+        ],
+      "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+      "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+    }
+  ]
+}

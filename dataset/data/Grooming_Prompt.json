@@ -1,0 +1,288 @@
+{
+  "prompts":[
+      {
+        "meta_id": "13",
+        "input": "How can I schedule a grooming appointment for my pet through Petofy?",
+        "parse_shot": "To schedule a grooming session visit {url-petofy}. Now follow these steps:\n- Go to Grooming under Find services.\n- Select your city from the list.\n- Select the groomer who meets your criteria\nMake sure you are logged into your Petofy account for booking the groomer.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction in within the brackets [{shot}] to generate the response. Guide the user on how to schedule a grooming appointment on Petofy. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\n Make sure the user is informed about the necessity of being logged into their Petofy account for booking the groomer. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "list",
+        "parse_generation_length": "{m}{n}",
+        "meta_context": "User looking to schedule a grooming appointment for their pet on Petofy.",
+        "meta_constraints": "Grooming appointment, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-petofy",
+          "path": "data/placeholders.json",
+          "idx": "url-petofy",
+          "map": "urls"
+          },
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+        "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+        "meta_generation_units": [
+            {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map": "units"
+            }
+            ]
+      },
+      {
+        "meta_id": "14",
+        "input": "What qualifications and experience do the groomers on Petofy have?",
+        "parse_shot": "Petofy partners with highly qualified and experienced groomers. To check groomers' profiles, follow these steps:\n- Go to Grooming under Find services.\n- Select your city from the list.\n- You can now check groomer's qualifications and experience on their individual profiles.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction in within the brackets [{shot}] to generate the response. Guide the user on how to check groomers' profiles using the provided steps. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "list",
+        "parse_generation_length": "{m}{n}",
+        "meta_context": "User inquiring about the qualifications and experience of groomers on Petofy.",
+        "meta_constraints": "Groomer qualifications, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+        "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+        "meta_generation_units": [
+            {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map": "units"
+            }
+            ]
+      },
+      {
+        "meta_id": "15",
+        "input": "What is the cost of a grooming session?",
+        "parse_shot": "To check the cost of a grooming session, please visit {url-petofy}. Follow these steps:\n- Go to Grooming under Find Services.\n- Select your city from the list.\n- Choose the groomer who meets your criteria.\n- Connect with individual groomers to inquire about the cost of the grooming session.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction in within the brackets [{shot}] to generate the response. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\nEncourage the user to connect with individual groomers for detailed cost inquiries. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "list",
+        "parse_generation_length": "{m}{n}",
+        "meta_context": "User inquiring about the cost of grooming sessions on Petofy.",
+        "meta_constraints": "Grooming cost, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-petofy",
+          "path": "data/placeholders.json",
+          "idx": "url-petofy",
+          "map": "urls"
+          },
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+        "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+        "meta_generation_units": [
+            {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map": "units"
+            }
+            ]
+      },
+      {
+        "meta_id": "16",
+        "input": "Brief me about your grooming sessions.",
+        "parse_shot": "Grooming sessions are designed to fit your pet's needs, offering services like haircuts, shampooing, ear cleaning, massages, nail cutting, and more. For a detailed list of services and additional offerings, you can contact us at {url-contact} or call us at {phone-call-support}.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction in within the brackets [{shot}] to generate the response. Provide a brief overview of the grooming sessions offered by Petofy. Include details about the services provided. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User seeking information about grooming sessions provided by Petofy.",
+        "meta_constraints": "Grooming sessions, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+          
+      },
+      
+      {
+        "meta_id": "17",
+        "input": "Do you offer any special packages or add-on services?",
+        "instruction": "You will receive a question in triple backticks ```{input}```. If the answer cannot be deduced using the knowledge base then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "conversational",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about special packages or add-on services for grooming on Petofy.",
+        "meta_constraints": "Special packages, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+        "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+          
+      },
+      {
+        "meta_id": "18",
+        "input": "Is there a cancellation policy?",
+        "instruction": "You will receive a question in triple backticks ```{input}```. If the answer cannot be deduced using the knowledge base then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "conversational",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about the cancellation policy for grooming sessions on Petofy.",
+        "meta_constraints": "Cancellation policy, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+          
+      },
+      {
+        "meta_id": "19",
+        "input": "Are the grooming facilities clean and sanitized?",
+        "parse_shot": "Cleanliness and hygiene are our top priorities. You can visit {url-contact} or call us at {phone-call-support} for more such information.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction in within the brackets [{shot}] to generate the response. Affirm that cleanliness and hygiene are top priorities and direct the user to the provided link or contact number for more information. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "conversational",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about the cleanliness and sanitization of grooming facilities on Petofy.",
+        "meta_constraints": "Cleanliness, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      }
+    ]
+}

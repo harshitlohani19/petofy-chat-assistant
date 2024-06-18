@@ -1,0 +1,368 @@
+{
+  "prompts":[
+      {
+        "meta_id": "44",
+        "input": "How can I search for pet shops near my location on Petofy?",
+        "parse_shot": "To search for a pet shop near you through Petofy, visit {url-petofy} or use our mobile app. Now follow these steps:\n- Go to PetShops under Find services.\n- Select your city from the list.\n- Select the Nearest PetShop. Make sure you are logged into your Petofy account.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Guide the user on how to search for pet shops near their location on Petofy. Provide the response in steps using the following format:\n\nStep 1: \nStep 2: \nStep 3:\nContinue in this step format up to the last step. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "list",
+        "parse_generation_length": "{m}{n}",
+        "meta_context": "User searching for nearby pet shops on Petofy.",
+        "meta_constraints": "Pet shop search, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-petofy",
+          "path": "data/placeholders.json",
+          "idx": "url-petofy",
+          "map": "urls"
+          },
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_generation_atom_values": [
+            {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map": "atomic-values"
+            }
+            ],
+            "meta_generation_units": [
+            {
+            "placeholder": "n",
+            "path": "data/placeholders.json",
+            "idx": "unit-steps",
+            "map": "units"
+            }
+            ]
+
+
+      },
+      {
+        "meta_id": "45",
+        "input": "Are there any brokerage charges to shop with Petofy?",
+        "instruction": "You will receive a question in triple backticks ```{input}```. If the answer cannot be deduced using the knowledge base  then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about brokerage charges when shopping with Petofy.",
+        "meta_constraints": "Brokerage charges, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+        "meta_generation_atom_values": [
+
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+      },
+      {
+        "meta_id": "46",
+        "input": "How does Petofy verify and ensure the trustworthiness of the listed pet shops?",
+        "parse_shot": "Petofy verifies the trustworthiness of listed pet shops through a rigorous vetting process. Only verified and trustworthy businesses are featured on the platform.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Explain that Petofy verifies the trustworthiness of listed pet shops through a rigorous vetting process and features only verified and trustworthy businesses on the platform. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User asking about how Petofy verifies the trustworthiness of listed pet shops.",
+        "meta_constraints": "Pet shop verification, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+        "meta_generation_atom_values": [
+
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+            {
+            "placeholder": "k",
+            "path": "data/placeholders.json",
+            "idx": "unit-sentence",
+            "map": "units"
+            }
+            ]
+
+      },
+      {
+        "meta_id": "47",
+        "input": "What types of products and supplies can I find at the pet shops listed on Petofy?",
+        "parse_shot": "Pet shops listed on Petofy offer a wide range of products for your pet, including nutrition supplies, pet toys, grooming and wellness supplies, and many more. For more information, visit {url-contact} or call us at {phone-call-support}.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Inform the user that pet shops listed on Petofy offer a wide range of products for pets, including nutrition supplies, pet toys, grooming and wellness supplies, and more. Provide additional information on how to get more details. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about the types of products and supplies available at pet shops listed on Petofy.",
+        "meta_constraints": "Pet shop products, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      },
+      {
+        "meta_id": "48",
+        "input": "Are there any delivery charges in Petofy?",
+        "parse_shot": "Delivery charges may vary depending on the pet shop and your location. Please check the specific shop's details on Petofy or inquire directly with the shop for information on delivery charges.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Inform the user that delivery charges may vary, and they should check the specific shop's details on Petofy or inquire directly with the shop for information on delivery charges. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about delivery charges on Petofy.",
+        "meta_constraints": "Delivery charges, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      },
+      {
+        "meta_id": "49",
+        "input": "Could you please recommend toys for my dog?",
+        "parse_shot": "If you're a new pet owner and don't have much idea about toys, you can visit pet shops through Petofy. Consult with shop owners for expert advice on suitable toys for your dog. You can visit {url-contact} or call us at {phone-call-support} for more information.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. If the user is a new pet owner and needs toy recommendations, suggest visiting pet shops through Petofy and consulting with shop owners for expert advice on suitable toys for their dog. Provide additional information on how to get more details. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User seeking recommendations for toys for their dog.",
+        "meta_constraints": "Dog toy recommendations, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+         "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      },
+      {
+        "meta_id": "50",
+        "input": "Are there any discounts, promotions offered by the shops?",
+        "instruction": "You will receive a question in triple backticks ```{input}```. If the answer cannot be deduced using the knowledge base then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about discounts and promotions offered by pet shops on Petofy.",
+        "meta_constraints": "Pet shop discounts, Petofy",
+        "meta_placeholders_urls": [
+          
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      },
+      {
+        "meta_id": "51",
+        "input": "What are the delivery options available if I want to order online?",
+        "parse_shot": "You can check all delivery options on individual shop profiles. Select a nearby shop to explore the available delivery options for online orders.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Inform the user that they can check all delivery options on individual shop profiles and suggest selecting a nearby shop to explore the available delivery options for online orders. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User asking about delivery options for online orders from pet shops on Petofy.",
+        "meta_constraints": "Pet shop delivery options, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      },
+      {
+        "meta_id": "52",
+        "input": "Can I choose to pick up products directly from the pet shop?",
+        "parse_shot": "Absolutely! You can visit pet shops directly in person to explore products. Please check with individual shops for their specific pickup policies and procedures.",
+        "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in the helper instruction within the brackets [{shot}] to generate the response. Assure the user that they can choose to pick up products directly from pet shops by visiting them in person. Advise checking with individual shops for their specific pickup policies and procedures. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant.Please connect us at {url-contact}'.You need to answer in {generation_length}",
+        "meta_generation_type": "dialogue",
+        "parse_generation_length": "{m}{k}",
+        "meta_context": "User inquiring about the option to pick up products directly from pet shops on Petofy.",
+        "meta_constraints": "Pet shop pickup option, Petofy",
+        "meta_placeholders_urls": [
+          {
+          "placeholder": "url-contact",
+          "path": "data/placeholders.json",
+          "idx": "url-contact",
+          "map": "urls"
+          }
+          ],
+          "meta_placeholders_phone-numbers": [
+          {
+          "placeholder": "phone-call-support",
+          "path": "data/placeholders.json",
+          "idx": "phone-call-support",
+          "map": "phone-numbers"
+          }
+          ],
+          "meta_generation_atom_values": [
+          {
+          "placeholder": "m",
+          "path": "data/placeholders.json",
+          "idx": "atomic-values-val5",
+          "map": "atomic-values"
+          }
+          ],
+          "meta_generation_units": [
+          {
+          "placeholder": "k",
+          "path": "data/placeholders.json",
+          "idx": "unit-sentence",
+          "map": "units"
+          }
+          ]
+      }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "prompts":[
+    {
+      "meta_id": "20",
+      "input": "How many veterinarians use Petofy's OPHR?",
+      "parse_shot": "Over 100 veterinarians, including top pet experts, use Petofy's OPHR Software. Check all OPHR users at {url-ophr}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Encourage the user to check all OPHR users through the provided link. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about veterinarians using Petofy's OPHR.",
+      "meta_constraints": "OPHR users, Petofy",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-ophr",
+            "path": "data/placeholders.json",
+            "idx": "url-ophr",
+            "map":  "urls"
+        },
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+    ],
+    "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+    
+  ],
+  "meta_generation_units": [
+    {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+    }
+  ]
+
+    },
+    {
+      "meta_id": "21",
+      "input": "Can I use OPHR software on mobile?",
+      "parse_shot": "You can use OPHR software on your mobile. Download and install the 'Petofy OPHR' mobile app from the play store or use this link {url-ophr-playstore}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Confirm that users can use the OPHR software on their mobiles and provide instructions for downloading and installing the app. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about using OPHR software on mobile.",
+      "meta_constraints": "OPHR software, Mobile, Petofy",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-ophr-playstore",
+            "path": "data/placeholders.json",
+            "idx": "url-ophr-playstore",
+            "map":  "urls"
+        },
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+        ],
+      "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+        ],
+      "meta_generation_units": [
+        {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+        }
+        ]
+      
+    },
+    {
+      "meta_id": "22",
+      "input": "What is Petofy's Online Pet Health Record (OPHR) and its benefits for veterinarians?",
+      "parse_shot": "Petofy's OPHR is a cloud-based veterinary software for managing clinics digitally. It enables vets to track patient records, improve efficiency, automate repetitive tasks, and provide attentive pet care. For details, visit {url-ophr-membership-pricing} or call us at {phone-call-support}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Explain what Petofy's OPHR is and highlight its benefits for veterinarians. Direct the user to visit the provided link or call for detailed information. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User seeking information about Petofy's OPHR and its benefits for veterinarians.",
+      "meta_constraints": "OPHR, Petofy",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-ophr-membership-pricing",
+            "path": "data/placeholders.json",
+            "idx": "url-ophr-membership-pricing",
+            "map":  "urls"
+        },
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+        ],
+      "meta_placeholders_phone-numbers": [
+          {
+              "placeholder": "phone-call-support",
+              "path": "data/placeholders.json",
+              "idx": "phone-call-support",
+              "map":  "phone-numbers"
+          }
+      ],
+      "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+        ],
+      "meta_generation_units": [
+        {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+        }
+        ]
+    },
+    {
+      "meta_id": "23",
+      "input": "How is patient data secured in OPHR?",
+      "parse_shot": "Data security is our top priority. Patient data in OPHR is secure with access control and Cloud-based storage using user authentication via username, password, and OTP sent via email and SMS.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Emphasize that data security is a top priority and explain the measures taken to ensure the security of patient data within OPHR. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about the security of patient data within OPHR.",
+      "meta_constraints": "Data security, OPHR, Petofy",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+      ],
+      "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+    
+      ],
+      "meta_generation_units": [
+     {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+     }
+      ]
+      
+    },
+    {
+      "meta_id": "24",
+      "input": "What is the cost structure for using OPHR?",
+      "parse_shot": "Cost structure for using OPHR varies based on plans. We offer free, Silver, and Gold plans with additional features. For detailed pricing, visit {url-ophr-membership-pricing} or call us at {phone-call-support}.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Provide information about the cost structure for using OPHR, highlighting the availability of different plans. Direct the user to the provided link or contact number for a detailed cost structure. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "dialogue",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about the cost structure of using OPHR.",
+      "meta_constraints": "Cost structure, OPHR, Petofy,fees ,costing",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-ophr-membership-pricing",
+            "path": "data/placeholders.json",
+            "idx": "url-ophr-membership-pricing",
+            "map":  "urls"
+        },
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+        ],
+      "meta_placeholders_phone-numbers": [
+          {
+              "placeholder": "phone-call-support",
+              "path": "data/placeholders.json",
+              "idx": "phone-call-support",
+              "map":  "phone-numbers"
+          }
+      ],
+      "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+        ],
+      "meta_generation_units": [
+        {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+        }
+        ]
+
+    },
+    {
+      "meta_id": "25",
+      "input": "Can veterinarians customize OPHR?",
+      "parse_shot": "Yes,veterinarians can customize OPHR to meet their specific needs.",
+      "instruction": "You will receive a question in triple backticks ```{input}```. Utilize the provided information in helper instruction within the brackets [{shot}] to generate the response. Confirm that veterinarians can customize OPHR based on their specific needs. If the answer cannot be deduced using the knowledge base and helper instruction within brackets [] then give the response as 'I am just a virtual assistant. Please connect us at {url-contact}'.You need to answer in {generation_length}",
+      "meta_generation_type": "conversational",
+      "parse_generation_length": "{m}{k}",
+      "meta_context": "User inquiring about the customization options of OPHR.",
+      "meta_constraints": "Customization, OPHR, Petofy",
+      "meta_placeholders_urls": [
+        {
+            "placeholder": "url-contact",
+            "path": "data/placeholders.json",
+            "idx": "url-contact",
+            "map":  "urls"
+        }
+      ],
+      "meta_generation_atom_values": [
+        {
+            "placeholder": "m",
+            "path": "data/placeholders.json",
+            "idx": "atomic-values-val5",
+            "map":  "atomic-values"
+        }
+    
+      ],
+      "meta_generation_units": [
+     {
+        "placeholder": "k",
+        "path": "data/placeholders.json",
+        "idx": "unit-sentence",
+        "map":  "units"
+     }
+      ]
+    }
+  ]
+}
