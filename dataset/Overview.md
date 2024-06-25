@@ -201,4 +201,3 @@ For more detailed information, visit [Petofy](https://www.petofy.com).
 This information was gathered from Petofy’s official site and associated resources:
 
 - [Petofy Services](https://www.petofy.com/Home/HomePage)
-- [Petofy Features](https://testing.petofy.com)
