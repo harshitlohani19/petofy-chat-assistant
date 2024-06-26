@@ -1,19 +1,23 @@
-# prompt: load multiple documents by loading directory here using its path
+import os
+import json
 
-from pathlib import Path
-def load_documents():
-  # Define the directory path containing the documents
-  directory_path = "/petofy/data"
 
-  # Get a list of all files in the directory
-  files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]
+def load_json():
+    combined_data = []
+    folder_path = (
+        "/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/dataset/data"
+    )
+    # Traverse through the directory tree using os.walk
+    for root, dirs, files in os.walk(folder_path):
+        for filename in files:
+            if filename.endswith(".json"):
+                file_path = os.path.join(root, filename)
+                with open(file_path, "r") as f:
+                    # Load JSON data from the file
+                    data = json.load(f)
+                    # Append to the combined list
+                    combined_data.append(data)
+    return combined_data
 
-  # Load each document and add it to a list
-  documents = []
-  for file in files:
-    with open(os.path.join(directory_path, file), "r") as f:
-      document_content = f.read()
-      documents.append({"id": file, "text": document_content})
-  return documents
 
-load_documents()
+load_json()
