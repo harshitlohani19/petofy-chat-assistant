@@ -25,10 +25,8 @@
     {
       "Prompt": "Can veterinarians customize OPHR?",
       "Response": "Yes, veterinarians can customize OPHR based on their specific needs."
-    }
-  ]
-  -------------------------
-  [
+    },
+
   {
     "Prompt": "What are the different membership plans available for OPHR?",
     "Response": "Petofy offers three main membership plans for OPHR: Free, Silver, and Gold. Each plan comes with different features and capabilities to suit various needs. For detailed information on what each plan includes, visit the membership pricing page on our website."
@@ -40,10 +38,8 @@
   {
     "Prompt": "Are there any discounts available for long-term OPHR subscriptions?",
     "Response": "Yes, Petofy offers discounts for long-term subscriptions to OPHR. You can get better rates by opting for annual plans. Check the membership pricing page or contact our support team for the latest offers."
-  }
-]
-----------------
-[
+  },
+
   {
     "Prompt": "What are the key features of Petofy's OPHR software?",
     "Response": "Petofy's OPHR software includes features like patient record management, appointment scheduling, billing and invoicing, telemedicine capabilities, and secure data storage. These features help veterinarians streamline their clinic operations and provide better care for pets."
@@ -55,10 +51,8 @@
   {
     "Prompt": "Can OPHR integrate with other veterinary management tools?",
     "Response": "Yes, OPHR is designed to integrate with various veterinary management tools to provide a seamless experience. Contact our support team to learn more about available integrations and how they can be set up."
-  }
-]
-----------------
-[
+  },
+
   {
     "Prompt": "How does Petofy ensure the security of data stored in OPHR?",
     "Response": "Petofy uses advanced encryption and secure cloud storage to protect data stored in OPHR. Access is controlled through multi-factor authentication, ensuring that only authorized users can access sensitive information."
@@ -70,10 +64,8 @@
   {
     "Prompt": "Can I control who accesses my pet's health records in OPHR?",
     "Response": "Yes, as a pet owner, you have control over who can access your pet's health records in OPHR. You can grant or revoke access permissions to specific veterinarians or caregivers through your account settings."
-  }
-]
-------------------------
-[
+  },
+
   {
     "Prompt": "Can I access OPHR on my mobile device?",
     "Response": "Yes, OPHR is accessible on mobile devices through the Petofy OPHR app, available for download on the Play Store. This allows you to manage your pet's health records and schedule appointments on the go."
@@ -85,10 +77,8 @@
   {
     "Prompt": "Can OPHR be used by multiple users within the same clinic?",
     "Response": "Yes, OPHR can be used by multiple users within the same clinic. Each user can have their own login credentials with specific access rights, allowing for collaborative management of patient records."
-  }
-]
------------------------
-[
+  },
+
   {
     "Prompt": "How can I contact Petofy customer support for OPHR issues?",
     "Response": "You can contact Petofy customer support for OPHR issues through the 'Contact Us' page on the website or by calling the customer service number (+91) 6399-638-639. Our team is available to assist you with any queries or problems."
@@ -100,10 +90,8 @@
   {
     "Prompt": "What kind of support is available for OPHR software?",
     "Response": "Petofy provides comprehensive support for OPHR software, including help with software usage, issue resolution, and answering any questions you may have about the platform. Support is available through email, phone, and online chat."
-  }
-]
-----------------------------
-[
+  },
+
   {
     "Prompt": "Can OPHR be customized to fit the specific needs of my veterinary clinic?",
     "Response": "Yes, OPHR is customizable to meet the specific needs of your veterinary clinic. You can tailor features such as appointment settings, patient record templates, and reporting tools. Contact our support team to learn more about customization options."
@@ -115,10 +103,8 @@
   {
     "Prompt": "Can I add custom fields to the OPHR patient records?",
     "Response": "Yes, you can add custom fields to the OPHR patient records to capture additional information specific to your clinic's needs. This feature allows for more detailed and personalized record-keeping."
-  }
-]
---------------
-[
+  },
+
   {
     "Prompt": "What are the system requirements for using OPHR on a desktop computer?",
     "Response": "To use OPHR on a desktop computer, you need a device with an internet connection and a modern web browser such as Chrome, Firefox, or Safari. Ensure your browser is up-to-date for the best experience."
@@ -130,10 +116,8 @@
   {
     "Prompt": "How often is OPHR software updated?",
     "Response": "Petofy regularly updates OPHR software to introduce new features, improve performance, and enhance security. Users are notified of major updates, and most updates occur seamlessly in the background."
-  }
-]
---------------
-[
+  },
+
   {
     "Prompt": "Where can I read reviews from other users of OPHR?",
     "Response": "You can read reviews from other users of OPHR on the Petofy website and various review platforms. User feedback helps us improve our services, and we encourage you to share your own experience as well."
@@ -147,5 +131,4 @@
     "Response": "To provide feedback on your experience with OPHR, log into your Petofy account and visit the feedback section. You can also leave reviews on the app store or contact Petofy support directly to share your thoughts."
   }
 ]
---------------------
 

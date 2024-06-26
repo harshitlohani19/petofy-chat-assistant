@@ -14,10 +14,8 @@
     {
         "Prompt": "How do I find pet sitters with good reviews on Petofy?",
         "Response": "To find pet sitters with good reviews on Petofy, look at the ratings and reviews section on each sitter’s profile. This feedback from other pet owners can help you choose a reliable and well-regarded pet sitter."
-    }
-]
--------------------
-[
+    },
+
     {
         "Prompt": "What types of services do pet sitters on Petofy provide?",
         "Response": "Pet sitters on Petofy provide a variety of services including daily visits, overnight stays, dog walking, feeding, administering medication, and general companionship for your pet while you are away. You can find detailed service offerings in each sitter’s profile."
@@ -33,10 +31,8 @@
     {
         "Prompt": "Can pet sitters on Petofy provide regular updates on my pet’s well-being?",
         "Response": "Yes, many pet sitters on Petofy provide regular updates on your pet’s well-being through text messages, photos, or video calls. This is often a part of their service to keep you informed and reassured about your pet’s care."
-    }
-]
-----------------------
-[
+    },
+
     {
         "Prompt": "How do I book a pet sitter through Petofy?",
         "Response": "To book a pet sitter through Petofy, visit the pet sitter's profile, check their availability, and use the 'Book Now' or 'Contact' option to schedule a service. You may need to provide details about your pet and the care you need."
@@ -52,10 +48,8 @@
     {
         "Prompt": "How do I cancel or reschedule a booking with a pet sitter on Petofy?",
         "Response": "To cancel or reschedule a booking with a pet sitter on Petofy, contact the sitter directly through the platform. Each sitter may have their own cancellation or rescheduling policies, which will be outlined in their profile."
-    }
-]
---------------------------------
-[
+    },
+
     {
         "Prompt": "How much do pet sitting services typically cost on Petofy?",
         "Response": "The cost of pet sitting services on Petofy varies depending on factors such as the type of service, duration, and the sitter's experience. Prices are usually listed on the sitter’s profile, and you can compare rates to find a service that fits your budget."
@@ -71,10 +65,8 @@
     {
         "Prompt": "Can I pay the pet sitter directly or is it handled through Petofy?",
         "Response": "Payments for pet sitting services are generally handled through the Petofy platform to ensure security and convenience. This helps streamline the payment process and provides a record of transactions for both parties."
-    }
-]
---------------------------------
-[
+    },
+
     {
         "Prompt": "What qualifications do pet sitters on Petofy typically have?",
         "Response": "Pet sitters on Petofy often have various qualifications such as experience in animal care, certifications in pet first aid, and training in specific animal behaviors. These qualifications are usually listed in their profiles for you to review."
@@ -90,10 +82,8 @@
     {
         "Prompt": "Can I find pet sitters who have experience with specific types of pets?",
         "Response": "Yes, you can find pet sitters on Petofy who have experience with specific types of pets such as dogs, cats, birds, or exotic animals. Their profiles will detail their areas of expertise and the types of pets they are comfortable caring for."
-    }
-]
----------------------------
-[
+    },
+
     {
         "Prompt": "How should I prepare my home for a pet sitter?",
         "Response": "To prepare your home for a pet sitter, ensure that your pet’s essentials like food, water, bedding, and medications are easily accessible. Leave detailed instructions about your pet’s routine and any special needs, and ensure the sitter has access to necessary areas of your home."
@@ -109,10 +99,8 @@
     {
         "Prompt": "What should I do if my pet has specific medical needs or a strict schedule?",
         "Response": "If your pet has specific medical needs or a strict schedule, make sure to clearly communicate these to the pet sitter. Provide written instructions, demonstrate any medical routines if necessary, and leave all required supplies and medications in an accessible location."
-    }
-]
------------------------------
-[
+    },
+
     {
         "Prompt": "What are the typical policies of pet sitters regarding cancellations?",
         "Response": "Typical policies of pet sitters regarding cancellations include requiring notice within a certain period to avoid charges. This period can vary, and details will be specified in the sitter’s profile or discussed during the booking process."
@@ -128,10 +116,8 @@
     {
         "Prompt": "Are there any rules about leaving personal belongings with the pet sitter?",
         "Response": "It’s generally advisable not to leave valuable personal belongings with the pet sitter unless necessary. If you need to leave items such as keys, make sure they are handed over securely and that you discuss how they will be managed."
-    }
-]
--------------------------
-[
+    },
+
     {
         "Prompt": "Can pet sitters on Petofy handle emergency situations?",
         "Response": "Many pet sitters on Petofy are trained to handle emergency situations involving your pet. They may have certifications in pet first aid and are usually prepared to take swift action, including contacting you, your vet, or emergency services."
@@ -149,5 +135,4 @@
         "Response": "If your pet has a medical emergency while in the care of a pet sitter, ensure that the sitter knows your vet’s contact details, any specific medical instructions, and how to reach you or another emergency contact. Most sitters will follow these protocols to ensure prompt care."
     }
 ]
-------------------------
 

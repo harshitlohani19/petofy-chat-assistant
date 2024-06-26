@@ -14,10 +14,8 @@
     {
         "Prompt": "How do I find pet shelters that are currently open?",
         "Response": "You can check the operating hours of pet shelters listed on Petofy by visiting their profiles. The profiles often include details about their opening hours and contact information."
-    }
-]
------------------------------
-[
+    },
+
     {
         "Prompt": "What services do pet shelters typically provide?",
         "Response": "Pet shelters typically provide services such as pet adoption, rescue and rehabilitation of abandoned animals, spay and neuter programs, and veterinary care. Some also offer community outreach and education programs."
@@ -33,10 +31,8 @@
     {
         "Prompt": "Are there shelters that provide temporary housing for pets in emergency situations?",
         "Response": "Some pet shelters offer temporary housing for pets in emergency situations, such as natural disasters or personal crises. You can find this information on their profiles or by contacting them directly."
-    }
-]
-------------------
-[
+    },
+
     {
         "Prompt": "What is the adoption process like at pet shelters listed on Petofy?",
         "Response": "The adoption process at pet shelters typically involves filling out an application, meeting the pet, and possibly a home visit. The shelter will review your application to ensure a good match between you and the pet."
@@ -52,10 +48,8 @@
     {
         "Prompt": "What should I bring when adopting a pet from a shelter?",
         "Response": "When adopting a pet, you should bring a valid ID, proof of address, and any required adoption fees. It’s also helpful to bring a leash or carrier for the pet’s safe transport home."
-    }
-]
----------------------------
-[
+    },
+
     {
         "Prompt": "What are the typical policies of pet shelters regarding adoptions?",
         "Response": "Typical policies include providing detailed information about the pet, ensuring a good match between the adopter and the pet, and requiring a commitment to proper care. Shelters may also conduct background checks or home visits."
@@ -73,7 +67,6 @@
         "Response": "Restrictions may include age requirements, limits on the number of pets you can adopt, and checks to ensure that adopters can provide a stable and suitable environment for the pet."
     }
 ]
----------------------
 
 
 

@@ -34,10 +34,8 @@
     {
       "Prompt": "Can I choose to pick up products directly from the pet shop?",
       "Response": "Absolutely! You can visit pet shops directly in person to explore products. Please check with individual shops for their specific pickup policies and procedures."
-    }
-  ]
-  ------------
-  [
+    },
+
     {
         "Prompt": "How can I find pet shops near my location on Petofy?",
         "Response": "To find pet shops near you on Petofy, go to the 'Pet Shops' section under 'Find Services'. Use the location filter to select your city and browse the list of nearby shops."
@@ -45,10 +43,8 @@
     {
         "Prompt": "Can I search for pet shops by specific products?",
         "Response": "Yes, you can search for pet shops by specific products on Petofy. Use the search bar to enter keywords related to the products you're looking for, and filter the results by shop."
-    }
-]
-------------
-[
+    },
+
     {
         "Prompt": "What types of products can I find at pet shops on Petofy?",
         "Response": "Pet shops on Petofy offer a wide range of products including food, toys, grooming supplies, health products, and accessories for various types of pets."
@@ -60,10 +56,8 @@
     {
         "Prompt": "Can I find specialized food for my pet's dietary needs?",
         "Response": "Yes, you can find specialized food for pets with specific dietary needs. Use the filters on Petofy to search for pet food based on dietary requirements."
-    }
-]
------------------
-[
+    },
+
     {
         "Prompt": "What payment methods are accepted by pet shops on Petofy?",
         "Response": "Pet shops on Petofy typically accept various payment methods including credit/debit cards, online banking, and digital wallets. Check the shop's profile for specific payment options."
@@ -75,10 +69,8 @@
     {
         "Prompt": "Are there any additional fees for using certain payment methods?",
         "Response": "Additional fees for using specific payment methods may apply. Review the shop's payment policies on Petofy or inquire directly with the shop."
-    }
-]
-------------------
-[
+    },
+
     {
         "Prompt": "What are the delivery options for ordering from pet shops on Petofy?",
         "Response": "Delivery options vary by shop. Many offer home delivery or express shipping. Check the delivery details on each shop's profile for more information."
@@ -90,10 +82,8 @@
     {
         "Prompt": "Can I pick up my order directly from the pet shop?",
         "Response": "Yes, you can choose to pick up your order directly from the pet shop. Check the shop's profile for pickup availability and instructions."
-    }
-]
----------------
-[
+    },
+
     {
         "Prompt": "What is the return policy for products bought from pet shops on Petofy?",
         "Response": "Return policies vary by shop. Review the shop's return and exchange policies on Petofy or contact them directly for specific details."
@@ -105,10 +95,8 @@
     {
         "Prompt": "What should I do if I receive a damaged or incorrect product?",
         "Response": "If you receive a damaged or incorrect product, contact the shop's customer service immediately to arrange for a return or exchange. Follow the instructions on the shop's Petofy profile."
-    }
-]
------------------
-[
+    },
+
     {
         "Prompt": "Are there any ongoing discounts or promotions at pet shops on Petofy?",
         "Response": "Check the 'Offers' section on Petofy or individual shop profiles for information on current discounts and promotions."
@@ -120,10 +108,8 @@
     {
         "Prompt": "Can I use promo codes for additional discounts?",
         "Response": "Some shops on Petofy accept promo codes for additional discounts. Check the shop's details for available promo codes and terms of use."
-    }
-]
--------------------
-[
+    },
+
     {
         "Prompt": "How does Petofy ensure the quality of pet shops listed on the platform?",
         "Response": "Petofy ensures the quality of listed pet shops through a rigorous vetting process and ongoing reviews. Only reputable and trustworthy shops are featured on our platform."
@@ -135,10 +121,8 @@
     {
         "Prompt": "How can I leave a review for a pet shop on Petofy?",
         "Response": "To leave a review, go to the shop's profile on Petofy and click on the 'Write a Review' button. Share your experience to help other users."
-    }
-]
---------------------
-[
+    },
+
     {
         "Prompt": "What should I know about shopping for pet products on Petofy?",
         "Response": "When shopping on Petofy, explore various shops to find the best products and deals. Check each shop's policies on shipping, returns, and payments for a smooth experience."
@@ -152,4 +136,4 @@
         "Response": "Some pet shops on Petofy offer custom products or personalized services. Look for these options in the shop's profile or contact them directly for details."
     }
 ]
-----------------------
+
