@@ -63,15 +63,15 @@
 
   {
     "Prompt": "Can I find a vet who specializes in exotic pets on Petofy?",
-    "Response": "Yes, Petofy has vets who specialize in exotic pets. Use the search filters in the 'Consultant' section to find specialists for your specific pet type."
+    "Response": "Yes, Petofy has vets who specialize in exotic pets. Use the 'Consultant' section to find specialists for your specific pet type."
   },
   {
     "Prompt": "Are there vets who can provide acupuncture for pets listed on Petofy?",
-    "Response": "Yes, some vets on Petofy offer alternative therapies like acupuncture. Check the vet's profile for details on the services they provide."
+    "Response": "To check if some vets on Petofy offer alternative therapies like acupuncture, check the vet's profile for details on the services they provide."
   },
   {
     "Prompt": "How can I find a vet who provides physiotherapy for my dog on Petofy?",
-    "Response": "To find a vet who provides physiotherapy, go to the 'Consultant' section and use the filters to search for vets offering physiotherapy services."
+    "Response": "To find a vet who provides physiotherapy, go to the 'Consultant' section and look for vets offering physiotherapy services."
   },
 
   {
@@ -84,7 +84,7 @@
   },
   {
     "Prompt": "What emergency services are available through Petofy?",
-    "Response": "Petofy provides access to emergency veterinary services, including immediate consultations and referrals to emergency clinics. Check the 'Emergency Services' section for more details."
+    "Response": "Petofy provides access to emergency veterinary services, including immediate consultations and referrals to emergency clinics."
   },
 
   {
@@ -102,7 +102,7 @@
 
   {
     "Prompt": "What is the best diet for a senior dog?",
-    "Response": "Senior dogs often need diets low in calories but rich in fiber and nutrients to maintain a healthy weight and support joint health. Consult with a vet on Petofy for a diet plan tailored to your dog's needs."
+    "Response": "Consult with a vet on Petofy for a diet plan tailored to your dog's needs."
   },
   {
     "Prompt": "How do I choose the right food for my pet's breed?",
@@ -115,7 +115,7 @@
 
   {
     "Prompt": "How can I address my dog's anxiety issues?",
-    "Response": "Behavioral modification techniques and sometimes medication can help manage anxiety in dogs. Consult a vet or a pet behaviorist on Petofy for a customized plan."
+    "Response": "Consult a vet or a pet behaviorist on Petofy for a customized plan."
   },
   {
     "Prompt": "What should I do if my cat is scratching furniture excessively?",

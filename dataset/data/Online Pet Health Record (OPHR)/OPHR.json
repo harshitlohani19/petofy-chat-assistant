@@ -5,7 +5,7 @@
     },
     {
       "Prompt": "Can I use OPHR software on mobile?",
-      "Response": "Absolutely, you can use the OPHR software on your mobile. Just download and install the \"Petofy OPHR\" mobile app from the play store or simply use this link https://play.google.com/store/apps/details?id=com.cynoteck.petofyOPHR."
+      "Response": "Absolutely, you can use the OPHR software on your mobile. Just download and install the \"Petofy OPHR\" mobile app by simply use this link https://play.google.com/store/apps/details?id=com.cynoteck.petofyOPHR."
     },
     {
       "Prompt": "What is Petofy's Online Pet Health Record (OPHR) and how does it benefit veterinarians?",
@@ -16,11 +16,8 @@
       "Response": "Data security is our top priority. Patient data in OPHR is ensured through secure access control using Cloud-based storage. We implement user authentication via username, password, and OTP sent via email and SMS for added security."
     },
     {
-      "Prompt": "We provide customer support for veterinarians using OPHR, offering assistance with software usage, issue resolution, and addressing any queries related to the platform. You can contact us through https://petofy.com/contact-us or call us at +(91) 6399-638-639."
-    },
-    {
       "Prompt": "What is the cost structure for using OPHR?",
-      "Response": "The cost structure for using OPHR may vary based on specific plans or features. We offer a free plan with some services, as well as Silver and Gold plans with additional features. For a detailed cost structure, please visit https://petofy.com/online-pet-health-record/membership-pricing or call us at +(91) 6399-638-639."
+      "Response": "The cost structure for using OPHR may vary based on specific plans or features.For a detailed cost structure, please visit https://petofy.com/online-pet-health-record/membership-pricing or call us at +(91) 6399-638-639."
     },
     {
       "Prompt": "Can veterinarians customize OPHR?",
@@ -29,7 +26,7 @@
 
   {
     "Prompt": "What are the different membership plans available for OPHR?",
-    "Response": "Petofy offers three main membership plans for OPHR: Free, Silver, and Gold. Each plan comes with different features and capabilities to suit various needs. For detailed information on what each plan includes, visit the membership pricing page on our website."
+    "Response": "Petofy offers various membership plans for OPHR. Each plan comes with different features and capabilities to suit various needs. For detailed information on what each plan includes, visit our website."
   },
   {
     "Prompt": "Is there a trial period available for OPHR membership plans?",
@@ -37,7 +34,7 @@
   },
   {
     "Prompt": "Are there any discounts available for long-term OPHR subscriptions?",
-    "Response": "Yes, Petofy offers discounts for long-term subscriptions to OPHR. You can get better rates by opting for annual plans. Check the membership pricing page or contact our support team for the latest offers."
+    "Response": "To check if Petofy offers discounts for long-term subscriptions to OPHR.Check the membership pricing page or contact our support team for the latest offers."
   },
 
   {
