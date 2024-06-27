@@ -2,9 +2,10 @@ import os
 import openai
 from dotenv import load_dotenv, find_dotenv
 from openai import AzureOpenAI
+from pathmaker import env_path
 
 # Load environment variables from the .env file
-env_path = find_dotenv("config/.env")
+env_path = env_path()
 load_dotenv(env_path)
 
 
