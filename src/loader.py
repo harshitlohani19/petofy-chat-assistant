@@ -8,7 +8,7 @@ def load_json():
         "/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/dataset/data"
     )
     # Traverse through the directory tree using os.walk
-    for root, dirs, files in os.walk(folder_path):
+    for root, _, files in os.walk(folder_path):
         for filename in files:
             if filename.endswith(".json"):
                 file_path = os.path.join(root, filename)
@@ -16,8 +16,8 @@ def load_json():
                     # Load JSON data from the file
                     data = json.load(f)
                     # Append to the combined list
-                    combined_data.append(data)
-    #print(combined_data)
+                    combined_data.extend(data)
+    # print(combined_data)
     return combined_data
 
 

@@ -1,5 +1,4 @@
-[
-    {
+[{
         "Prompt": "How can I find pets available for adoption near me on Petofy?",
         "Response": "To find pets available for adoption near you, visit the Petofy website or app, use the search function to enter your location, and browse through the list of adoptable pets. You can filter the results by pet type, breed, age, and more."
     },
@@ -83,4 +82,3 @@
         "Response": "If the adoption doesn't work out, many agencies allow you to return the pet. Check the pet's adoption agreement or contact the agency to understand their return policy and the steps involved."
     }
 ]
-

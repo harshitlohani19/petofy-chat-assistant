@@ -1,5 +1,4 @@
-[
-    {
+[{
         "Prompt": "What types of pet insurance plans are available on Petofy?",
         "Response": "Petofy offers a variety of pet insurance plans including accident-only coverage, comprehensive health plans, and wellness packages. Each plan is designed to meet different needs and budgets, providing options for routine care, illness, and emergency situations."
     },
@@ -98,5 +97,3 @@
         "Response": "If you have questions about your pet insurance coverage, contact the customer support team for assistance. You can also find detailed policy information and FAQs on the Petofy website or in your insurance account portal."
     }
 ]
-
-

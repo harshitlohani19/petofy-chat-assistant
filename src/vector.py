@@ -8,10 +8,11 @@ combined_data = load_json()
 
 
 def generate_embeddings(combined_data):
-    for c in combined_data:
-        abcd = client.embeddings.create(input=c, model="text-embedding")
 
-    return abcd
+    for c in combined_data:
+        vector_data = client.embeddings.create(input=c, model="text-embedding")
+        print(vector_data)
+        return vector_data
 
 
 generate_embeddings(combined_data)

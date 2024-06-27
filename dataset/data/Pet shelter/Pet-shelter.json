@@ -1,5 +1,4 @@
-[
-    {
+[{
         "Prompt": "How can I find a pet shelter in Dehradun on Petofy?",
         "Response": "To find a pet shelter in Dehradun on Petofy, go to the 'Pet Shelter' section. You can browse the list of shelters, view their details, and get in touch with them directly through their profiles."
     },
@@ -67,6 +66,3 @@
         "Response": "Restrictions may include age requirements, limits on the number of pets you can adopt, and checks to ensure that adopters can provide a stable and suitable environment for the pet."
     }
 ]
-
-
-
