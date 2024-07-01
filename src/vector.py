@@ -1,5 +1,3 @@
-import os
-from openai import AzureOpenAI
 from loader import load_json
 from client import client_env
 

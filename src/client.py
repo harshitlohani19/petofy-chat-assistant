@@ -1,6 +1,5 @@
 import os
-import openai
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 from openai import AzureOpenAI
 from pathmaker import env_path
 
