@@ -1,71 +1,114 @@
-import json
 import os
-from pathmaker import env_path
+import json
 from dotenv import load_dotenv
+from pathmaker import env_path
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents.indexes import SearchIndexClient
 from azure.search.documents.indexes.models import (
+    ExhaustiveKnnAlgorithmConfiguration,
+    ExhaustiveKnnParameters,
     SearchIndex,
-    SimpleField,
+    SearchField,
     SearchFieldDataType,
+    SimpleField,
+    SearchableField,
+    SemanticConfiguration,
+    SemanticPrioritizedFields,
+    SemanticField,
+    SemanticSearch,
+    VectorSearch,
+    HnswAlgorithmConfiguration,
+    HnswParameters,
+    VectorSearchAlgorithmKind,
+    VectorSearchAlgorithmMetric,
+    VectorSearchProfile,
 )
 from azure.search.documents import SearchClient
-from vector import generate_embeddings
+
+# from vector import generate_embeddings
 from client import client_env
 
 client = client_env()
-vectors = generate_embeddings()
+# vectors = generate_embeddings()
 
 # Load environment variables from the .env file
 env_path = env_path()
 load_dotenv(env_path)
 
-endpoint = os.getenv("AZURE_ENDPOINT")
-azure_search_key = os.getenv("AZURE_RESOURCE_KEY")
+service_endpoint = os.getenv("AZURE_ENDPOINT")
+key = os.getenv("AZURE_RESOURCE_KEY")
 
 
 def create_index():
-    # Define the index name
-    index_name = "petofy_vector_data"
+    """
+    This script is used to create an Azure AI Search index with Vector Search and Semantic Search capabilities.
+    The script imports necessary modules and classes from the Azure SDK for Python. It uses the SearchIndexClient to interact with the Azure AI Search service, and the various models to define the structure of the index and its fields.
+    The script is designed to be run as a standalone script and does not contain any functions or classes. It uses environment variables to get the necessary credentials and settings for the Azure AI Search service.
+    """
 
-    client = SearchIndexClient(
-        endpoint=endpoint, credential=AzureKeyCredential(azure_search_key)
-    )
+    credential = AzureKeyCredential(key)
+    index_name = "petofy-vector-data"
 
-    try:
-        # Check if the index already exists
-        existing_index = client.get_index(index_name)
-        if existing_index:
-            print(f"Index '{index_name}' already exists. No action taken.")
-            return
-    except Exception as e:
-        # If the index doesn't exist, an exception will be thrown, which we can ignore
-        print(f"Index '{index_name}' does not exist. Creating a new one.")
+    index_client = SearchIndexClient(endpoint=service_endpoint, credential=credential)
 
-    # Define the index schema
-    fields = [
-        SimpleField(name="index", type=SearchFieldDataType.String, key=True),
-        SimpleField(name="object", type=SearchFieldDataType.String),
+    """
+	The index_fields list defines the fields that will be included in the index. 
+	Each field is defined using one of the field classes from the Azure SDK for Python, 
+	and the properties of the field are set using the parameters of the class constructor.
+	"""
+    index_fields = [
         SimpleField(
+            name="id",
+            type=SearchFieldDataType.String,
+            key=True,
+            sortable=True,
+            filterable=True,
+            facetable=True,
+        ),
+        SearchableField(name="text_chunk", type=SearchFieldDataType.String),
+        SearchField(
             name="embedding",
-            type=SearchFieldDataType.Collection(SearchFieldDataType.Double),
+            type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
+            searchable=True,
+            vector_search_dimensions=1536,
+            vector_search_profile_name="demoHnswProfile",
         ),
     ]
-
-    # Create the SearchIndex object
-    index_schema = SearchIndex(
-        name=index_name,
-        fields=fields,
+    """
+	The vector_search object defines the vector search settings for the index. 
+	It includes the algorithms and profiles to be used for vector search.
+	"""
+    vector_search = VectorSearch(
+        algorithms=[
+            HnswAlgorithmConfiguration(
+                name="demoHnsw",
+                kind=VectorSearchAlgorithmKind.HNSW,
+                parameters=HnswParameters(
+                    m=4,
+                    ef_construction=400,
+                    ef_search=500,
+                    metric=VectorSearchAlgorithmMetric.COSINE,
+                ),
+            ),
+        ],
+        profiles=[
+            VectorSearchProfile(
+                name="demoHnswProfile",
+                algorithm_configuration_name="demoHnsw",
+            ),
+        ],
     )
 
-    # Create the index in Azure Search
-    try:
-        result = client.create_index(index=index_schema)
-        print(f"Index '{index_name}' created successfully!")
-    except Exception as e:
-        print(f"Failed to create index '{index_name}': {e}")
+    index = SearchIndex(
+        name=index_name,
+        fields=index_fields,
+        vector_search=vector_search,
+    )
+    result = index_client.create_or_update_index(index)
 
-    client.close()
+    print(f" {result.name} created")
+    # Close the search client
+    index_client.close()
 
 
 create_index()
@@ -74,9 +117,9 @@ create_index()
 def upload_to_index():
     # Reinitialize the client to interact with the newly created index
     search_client = SearchClient(
-        endpoint=endpoint,
-        index_name="petofy_vector_data",
-        credential=AzureKeyCredential(azure_search_key),
+        endpoint=service_endpoint,
+        index_name="petofy-vector-data",
+        credential=AzureKeyCredential(key),
     )
     # Load data from JSON file
     with open("vector_data.json", "r") as json_file:

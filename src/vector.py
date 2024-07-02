@@ -15,8 +15,8 @@ def generate_embeddings():
         vector_data = client.embeddings.create(input=c, model="text-embedding")
         vectors.append(
             {
-                "index": str(index),
-                "object": str(c),
+                "id": str(index),
+                "text_chunk": str(c),
                 "embedding": vector_data.data[0].embedding,
             }
         )
