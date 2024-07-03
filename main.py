@@ -1,8 +1,14 @@
 import os
+import sys
 from openai import AzureOpenAI
 from dotenv import load_dotenv, find_dotenv
-from src.pathmaker import env_path
 from src.client import client_env
+
+# appending a path
+sys.path.append(
+    "/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/src/pathmaker.py"
+)
+from src.pathmaker import env_path
 
 client = client_env()
 # Load environment variables from the .env file
@@ -24,7 +30,7 @@ completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "what is india",
+            "content": "what is petofy",
         },
     ],
     extra_body={
