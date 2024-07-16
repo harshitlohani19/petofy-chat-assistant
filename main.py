@@ -3,11 +3,11 @@ import sys
 from openai import AzureOpenAI
 from dotenv import load_dotenv, find_dotenv
 from src.client import client_env
+from os.path import dirname, abspath
 
-# appending a path
-sys.path.append(
-    "/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/src/pathmaker.py"
-)
+d = dirname(dirname(abspath(__file__)))
+sys.path.append(d)
+
 from src.pathmaker import env_path
 
 client = client_env()

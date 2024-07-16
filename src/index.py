@@ -25,7 +25,6 @@ from azure.search.documents import SearchClient
 from client import client_env
 
 client = client_env()
-# vectors = generate_embeddings()
 
 # Load environment variables from the .env file
 env_path = env_path()
