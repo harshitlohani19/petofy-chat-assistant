@@ -5,7 +5,7 @@ from loader import load_json
 
 # Set logging level to ERROR to suppress INFO messages
 logging.getLogger("chromadb").setLevel(logging.ERROR)
-query_text = input(str("Enter query: "))
+query_text = ""
 
 
 def db_create():
@@ -39,7 +39,7 @@ def db_create():
 # db_create()
 
 
-def query_db():
+def query_db(query_text):
 
     client = chromadb.PersistentClient(
         path="/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/chromadb/"
@@ -64,4 +64,4 @@ def query_db():
     return s, query_text
 
 
-query_db()
+query_db(query_text)
