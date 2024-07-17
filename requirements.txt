@@ -1,0 +1,9 @@
+openai==1.35.3
+python-dotenv
+azure-search-documents
+azure-ai-textanalytics
+langchain
+langchain-community
+langchain 
+langchain_openai
+chromadb
