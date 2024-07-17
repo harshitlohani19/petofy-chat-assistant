@@ -2,10 +2,13 @@ import logging
 import chromadb
 from chromadb.utils import embedding_functions
 from loader import load_json
+from embedder import Embedder
 
 # Set logging level to ERROR to suppress INFO messages
 logging.getLogger("chromadb").setLevel(logging.ERROR)
 query_text = ""
+
+embedder = Embedder().model_name
 
 
 def db_create():
@@ -15,7 +18,7 @@ def db_create():
         path="/home/harshitlohani/Desktop/Projects/petofy-chat-assistant/chromadb/"
     )
 
-    embf = embedding_functions.DefaultEmbeddingFunction()  # by default all-MiniLM-L6-v2
+    embf = embedder  # by default all-MiniLM-L6-v2
     documents = []
     # Combine Prompt and Response into a single document
     for item in combined_data:

@@ -18,7 +18,7 @@ def load_json():
                     data = json.load(f)
                     # Append to the combined list
                     combined_data.extend(data)
-    # print(combined_data)
+    # print((combined_data))
     return combined_data
 
 

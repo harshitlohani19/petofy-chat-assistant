@@ -13,7 +13,6 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
 )
 
-
 while True:
     query = input("Enter your question: ").strip().lower()
     if query == "exit":
