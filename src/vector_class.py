@@ -5,12 +5,10 @@ from src.embedder import Embedder
 data = load_json()
 
 
-class vector_func:
+class vector:
     def __init__(self, name=None, loc=None) -> None:
         self.name = name
         self.loc = loc
-        self.chunks = []
-        self.combined_text = []
 
     def vector_name(self) -> str:
         if not self.name:
@@ -21,18 +19,6 @@ class vector_func:
         if not self.loc:
             self.loc = input(str("enter path: "))
         return self.loc
-
-    def splitter(self, data) -> list:
-        self.combined_text = []
-        self.chunks = []
-        # Combine Prompt and Response into a single document
-        for item in data:
-            for key, value in item.items():
-                self.combined_text.append(str(value))  # Ensure all values are strings
-        for i in range(0, len(self.combined_text), 100):
-            chunk = " ".join(self.combined_text[i : i + 100])
-            self.chunks.append(chunk)
-        return self.chunks
 
     def db_create(self):
         client = chromadb.PersistentClient(path=f"{self.vector_loc()}")
@@ -62,3 +48,34 @@ class vector_func:
         # test = collection.peek()["embeddings"]
         # print(test)
         return collection
+
+
+import json
+from loader import load_json
+from client import client_env
+
+client = client_env()
+combined_data = load_json()
+
+vectors = []
+
+
+def generate_embeddings():
+
+    index = 0
+    for c in combined_data:
+        vector_data = client.embeddings.create(input=c, model="text-embedding")
+        vectors.append(
+            {
+                "id": str(index),
+                "text_chunk": str(c),
+                "embedding": vector_data.data[0].embedding,
+            }
+        )
+        index += 1
+    # Write vectors to a JSON file
+    with open("vector_data.json", "w") as json_file:
+        json.dump(vectors, json_file)
+
+
+generate_embeddings()
