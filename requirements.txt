@@ -6,4 +6,4 @@ langchain
 langchain-community
 langchain 
 langchain_openai
-chromadb
+chromadb==0.5.3
