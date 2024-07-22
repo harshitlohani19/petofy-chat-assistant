@@ -8,7 +8,3 @@ class Basesplitter(ABC):
     @abstractmethod
     def custom_splitter(self,data,):
         pass
-    
-    @abstractmethod
-    def set_splitter(self,data,callback):
-        pass
