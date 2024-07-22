@@ -1,5 +1,5 @@
 from abc import ABC,abstractmethod
-class Vector(ABC):
+class BaseVector(ABC):
 
     @abstractmethod
     def vector_name(self,name):

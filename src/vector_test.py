@@ -1,8 +1,6 @@
-from vector import Vector
+from vector import BaseVector
 
-vectors=Vector()
-
-class User_vector(Vector):
+class User_vector(BaseVector):
 
     def vector_name(self, name):
         return name
@@ -10,6 +8,6 @@ class User_vector(Vector):
     def vector_loc(self, loc):
         return loc
     
-    def set_vector(self,vector_callback):
-        result = vector_callback()
+    def set_vector(self,vector_callback,*args):
+        result = vector_callback(*args)
         return result
