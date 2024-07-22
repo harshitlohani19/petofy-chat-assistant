@@ -4,3 +4,4 @@ venv/
 __pycache__/
 chromadb/
 vector_data.json
+chromadb/chroma.sqlite3

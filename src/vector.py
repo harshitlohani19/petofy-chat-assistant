@@ -24,7 +24,7 @@ class Vector:
         client = chromadb.PersistentClient(path=f"{self.loc}")
         emb_fun = Embedder.get_model(self)
         db_name = self.name
-        chunks = splitter.
+        # chunks = splitter.
 
         # Generate unique IDs for each document
         ids = [f"doc{i+1}" for i in range(len(chunks))]

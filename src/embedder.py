@@ -46,5 +46,7 @@ class Embedder:
 
 
     def sentance_transformers():
+        pass
 
     def hugging_face():
+        pass

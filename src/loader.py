@@ -1,7 +1,7 @@
 import os
 import json
 from pathmaker import data_path
-import re
+
 dataset_path = data_path()
 
 
