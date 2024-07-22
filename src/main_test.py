@@ -2,7 +2,6 @@ from splitter_test import user_split_algo
 from loader import load_json
 
 
-
 combined_data, data = load_json()
 user_in=user_split_algo()
 
