@@ -1,7 +1,7 @@
 import os
 import json
 from pathmaker import data_path
-
+import re
 dataset_path = data_path()
 
 
@@ -19,7 +19,12 @@ def load_json():
                     # Append to the combined list
                     combined_data.extend(data)
     # print((combined_data))
-    return combined_data
+    combined_text = []
+    # Combine Prompt and Response into a single document
+    for item in data:
+        for key, value in item.items():
+            combined_text.append(str(value))  # Ensure all values are strings
+    return combined_data, combined_text
 
 
 load_json()
