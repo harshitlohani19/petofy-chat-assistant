@@ -9,9 +9,5 @@ class Vector(ABC):
     def vector_loc(self,loc):
         pass
 
-    @abstractmethod
-    def set_vector(self,callback):
-        pass
-
 
 

@@ -9,3 +9,7 @@ class User_vector(Vector):
     
     def vector_loc(self, loc):
         return loc
+    
+    def set_vector(self,vector_callback):
+        result = vector_callback()
+        return result
