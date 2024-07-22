@@ -1,13 +1,6 @@
-from vector import BaseVector
+from user_vector import User_vector
+user_vector= User_vector()
 
-class User_vector(BaseVector):
-
-    def vector_name(self, name):
-        return name
-    
-    def vector_loc(self, loc):
-        return loc
-    
-    def set_vector(self,vector_callback,*args):
-        result = vector_callback(*args)
-        return result
+# Using the vector_name method as a callback
+result_name = user_vector.set_vector(user_vector.vector_name, "xyz")
+print(result_name)

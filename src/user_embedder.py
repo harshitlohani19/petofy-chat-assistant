@@ -2,7 +2,7 @@ from embedder import Embedder
 
 class User_embedding(Embedder):
 
-    def sentance_transformers(self):
+    def sentence_transformers(self):
         pass
     def hugging_face(self):
         pass
@@ -11,7 +11,6 @@ class User_embedding(Embedder):
 
     def custom_embedder(self):
         pass
-
 
     def set_embedder(self,embedder_callback,):
         result = embedder_callback()

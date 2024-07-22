@@ -11,9 +11,9 @@ class Embedder(ABC):
         pass
 
     @abstractmethod
-    def sentance_transformers(self):
+    def sentence_transformers(self):
         pass
-    
+
     @abstractmethod
     def hugging_face(self):
         pass
