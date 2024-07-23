@@ -9,5 +9,3 @@ class BaseVector(ABC):
     def vector_loc(self,loc):
         pass
 
-
-

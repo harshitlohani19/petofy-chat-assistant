@@ -1,12 +1,14 @@
 import os
-import sys
 from openai import AzureOpenAI
 from dotenv import load_dotenv, find_dotenv
 from src.client import client_env
 from os.path import dirname, abspath
 
-d = dirname(dirname(abspath(__file__)))
-sys.path.append(d)
+
+from src.base_splitter import Basesplitter
+from src.base_vector_config import BaseVector
+from src.base_embedder import Embedder
+
 
 from src.pathmaker import env_path
 

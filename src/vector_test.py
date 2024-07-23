@@ -1,4 +1,4 @@
-from user_vector import User_vector
+from src.user_vector_config import User_vector
 user_vector= User_vector()
 
 # Using the vector_name method as a callback
