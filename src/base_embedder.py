@@ -6,10 +6,3 @@ class Embedder(ABC):
     def custom_embedder(self):
         pass
     
-    @abstractmethod
-    def azure_embeddings(self):
-        pass
-
-    @abstractmethod
-    def sentence_transformers(self):
-        pass

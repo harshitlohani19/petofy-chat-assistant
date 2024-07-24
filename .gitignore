@@ -6,3 +6,5 @@ chromadb/
 vector_data.json
 chromadb/chroma.sqlite3
 chromatest/
+testdb/
+src/testing.py
