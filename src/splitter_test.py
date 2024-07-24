@@ -1,9 +1,12 @@
-from user_splitter import user_split_algo
+from user_splitter import UserSplitAlgo
 from loader import load_json
 
 combined_data, data = load_json()
-user_in = user_split_algo()
+user_in = UserSplitAlgo()
+
 
 chunked_result = user_in.chunk_size(10)
-split_result = user_in.set_splitter(data, user_in.custom_splitter)
-print(split_result)
+#
+split_result = user_in.set_splitter(user_in.custom_splitter,data)
+for i in split_result:
+    print(i)
