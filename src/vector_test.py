@@ -1,13 +1,6 @@
-from vector import Vector
+from src.user_vector_config import User_vector
+user_vector= User_vector()
 
-vectors=Vector()
-
-def main():
-    name=input(str("Input name: "))
-    vectors.set_vector(vectors.vector_name,name)
-    
-    loc=input(str("Enter location:"))
-    vectors.set_vector(vectors.vector_loc,loc)
-
-
-main()
+# Using the vector_name method as a callback
+result_name = user_vector.set_vector(user_vector.vector_name, "xyz")
+print(result_name)
