@@ -30,10 +30,9 @@ class VectorDB(Basestorage):
             elif choice == 'yes':
                 print("Updating the existing collection.")
                 collection = client.get_collection(name=db_name)
-                # Add new chunks to the collection
-                # split_results = splitter.set_splitter(splitter.custom_splitter, data)
                 for chunk, chunk_id in split_results:
                     collection.add(documents=chunk, ids=chunk_id)
+                print("Updated")
                 return collection
         else:
             # Create a new collection if it does not exist
@@ -45,7 +44,7 @@ class VectorDB(Basestorage):
             for chunk, chunk_id in split_results:
                 collection.add(documents=chunk, ids=chunk_id)
 
-            print("Database updated or created successfully.")
+            print("success.")
             return collection
     
     def set_database(self, splitter, db_name, dbloc, emb_fun, callback):

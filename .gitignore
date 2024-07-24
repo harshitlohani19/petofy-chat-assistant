@@ -8,3 +8,4 @@ chromadb/chroma.sqlite3
 chromatest/
 testdb/
 src/testing.py
+testchroma/

@@ -44,7 +44,6 @@ class FlowControl(VectorConfig):
     def storage_creation(self) -> None:
         vec_db = VectorDB()
         db = vec_db.set_database(self.splitter, self.name, self.loc, self.emb_fun, vec_db.db_creation)
-        print("Db created successfully")
         # test = db.peek()["embeddings"]
         # print(test)
 
