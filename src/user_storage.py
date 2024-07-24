@@ -22,11 +22,9 @@ class VectorDB(Basestorage):
         collection = client.get_or_create_collection(
             name=db_name, embedding_function=emb_fun
         )
-        for chunk, id in split_results:
-            collection.add(documents=chunk, ids=[str(id)])
+        for chunk, chunk_id in split_results:
+            collection.add(documents=chunk, ids=chunk_id)
         test = collection.peek()["embeddings"]
-        # print(self.chunks)
-        # print(self.ids)
         print(test)
         return collection
     
