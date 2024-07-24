@@ -2,9 +2,9 @@ from chromadb.utils import embedding_functions
 from base_embedder import Embedder
 
 
-class UserEmbedding(Embedder):
+class ChromaEmbedder(Embedder):
 
-    def custom_embedder(self):
+    def embedder(self):
         emb = embedding_functions.DefaultEmbeddingFunction()
         return emb
 

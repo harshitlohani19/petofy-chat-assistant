@@ -1,6 +1,6 @@
 from user_vector_config import VectorConfig
-from user_splitter import UserSplitAlgo
-from user_embedder import UserEmbedding
+from user_splitter import ChunkSplitter
+from user_embedder import ChromaEmbedder
 from user_storage import VectorDB
 from loader import load_json
 
@@ -28,7 +28,7 @@ class FlowControl(VectorConfig):
 
     def splitting_algo(self, chunks_size):     
         self.chunks_size = chunks_size
-        self.splitter = UserSplitAlgo()
+        self.splitter = ChunkSplitter()
         # set chunks size
         self.splitter.chunk_size(chunks_size)
 
@@ -36,8 +36,8 @@ class FlowControl(VectorConfig):
         """
         returns embedding function
         """
-        embedder = UserEmbedding()
-        emb_fun = embedder.set_embedder(embedder.custom_embedder)
+        embedder = ChromaEmbedder()
+        emb_fun = embedder.set_embedder(embedder.embedder)
         self.emb_fun = emb_fun
         return self.emb_fun
 

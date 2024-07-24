@@ -3,13 +3,13 @@ from base_splitter import Basesplitter
 
 combined_data, data = load_json()
 
-class UserSplitAlgo(Basesplitter):
+class ChunkSplitter(Basesplitter):
 
     def chunk_size(self, chunks_size) -> int:
         self.chunks_size = chunks_size
         return self.chunks_size
     
-    def custom_splitter(self, data):
+    def test_splitter(self, data):
         ids = 0
         for i in range(0, len(data), self.chunks_size):
             chunk = data[i:i + self.chunks_size]

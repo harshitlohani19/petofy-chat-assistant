@@ -1,18 +1,20 @@
 import chromadb
 from base_storage import Basestorage
-from user_splitter import UserSplitAlgo
+from user_splitter import ChunkSplitter
 from loader import load_json
 
 combined_data, data = load_json()
 
 class VectorDB(Basestorage):
     
-    splitter = UserSplitAlgo()
+    splitter_instance = ChunkSplitter()
 
-    def db_creation(self, splitter, db_name, dbloc, emb_fun):
+    def db_creation(self, splitter_instance, db_name, dbloc, emb_fun):
+        splitter_instance = ChunkSplitter()
+
         client = chromadb.PersistentClient(path=f"{dbloc}")
 
-        split_results = splitter.set_splitter(splitter.custom_splitter, data)
+        split_results = splitter_instance.set_splitter(splitter_instance.test_splitter , data)
 
         # Check if the collection already exists
         existing_collections = client.list_collections()

@@ -6,5 +6,5 @@ class Basesplitter(ABC):
         pass
 
     @abstractmethod
-    def custom_splitter(self,data):
+    def splitter(self,data):
         pass
