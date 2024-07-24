@@ -17,7 +17,6 @@ class VectorDB(Basestorage):
 
         split_results=splitter.set_splitter(splitter.custom_splitter, data)
 
-
         collection = client.get_or_create_collection(
             name=db_name, embedding_function=emb_fun
         )
@@ -26,7 +25,6 @@ class VectorDB(Basestorage):
 
         return collection
     
-
     def set_database(self, splitter, db_name, dbloc, emb_fun, callback):
         result = callback(splitter, db_name, dbloc, emb_fun)
         return result
