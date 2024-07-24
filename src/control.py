@@ -14,8 +14,8 @@ class FlowControl(VectorConfig):
         self.chunks = None
         self.emb_fun = None
         self.chunk = None
-        self.ids=None
-        self.splitter=None
+        self.ids = None
+        self.splitter = None
 
     def vector_name(self, name) -> str:
         self.name = name
