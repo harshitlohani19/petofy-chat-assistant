@@ -11,11 +11,7 @@ class VectorDB(Basestorage):
     
     splitter = UserSplitAlgo()
 
-    def azure_index():
-        pass
-
-    def chromadb_creation(self, splitter,db_name, dbloc, emb_fun):
-
+    def db_creation(self, splitter,db_name, dbloc, emb_fun):
 
         client = chromadb.PersistentClient(path=f"{dbloc}")
 

@@ -3,11 +3,6 @@ from base_embedder import Embedder
 
 class UserEmbedding(Embedder):
 
-    def azure_embeddings(self):
-        pass
-    def sentence_transformers(self):
-        pass
-
     def custom_embedder(self):
         emb = embedding_functions.DefaultEmbeddingFunction()
         # emb_data=emb(chunks)
