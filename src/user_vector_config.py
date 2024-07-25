@@ -1,6 +1,6 @@
-from base_vector import BaseVector
+# from base_vector import BaseVector
 
-class VectorConfig(BaseVector):
-    def __init__(self):
-        super().__init__()
+# class VectorConfig(BaseVector):
+#     def __init__(self):
+#         super().__init__()
 
