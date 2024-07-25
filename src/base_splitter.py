@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 
-class Basesplitter(ABC):
-    @abstractmethod    
-    def chunk_size(self, chunks_size):
+class BaseSplitter(ABC):
+    @abstractmethod
+    def chunk_size(self, chunks_size: int) -> int:
         pass
 
     @abstractmethod
-    def custom_splitter(self,data):
+    def splitter(self, data) -> None:
         pass
