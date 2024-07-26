@@ -14,7 +14,7 @@ class ChunkSplitter(BaseSplitter):
             chunk = data[i:i + self.chunks_size]
             chunk_ids = [str(ids + j) for j in range(len(chunk))]
             yield chunk, chunk_ids
-            ids += len(chunk)
+            #ids += len(chunk)
 
     def set_splitter(self, splitter_callback, data):
         return splitter_callback(data)

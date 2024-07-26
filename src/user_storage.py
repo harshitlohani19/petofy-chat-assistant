@@ -20,7 +20,7 @@ class VectorDB(BaseStorage):
         
         if db_name in collection_names:
 
-            # Prompt user if they want to update the existing collection
+            # If user want to update the existing collection
             choice = input(f"The collection '{db_name}' already exists. Do you want to update it? (yes/no): ").strip().lower()
             if choice == 'no':
                 print("Exiting without updating.")
