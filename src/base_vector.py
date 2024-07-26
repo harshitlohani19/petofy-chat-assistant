@@ -11,7 +11,7 @@ class BaseVector(ABC):
         return self.name
 
     @vector_name.setter
-    def vector_name(self, name: str) -> None:
+    def vector_name(self, name) -> None:
         self.name = name
 
     @property
@@ -20,5 +20,5 @@ class BaseVector(ABC):
         return self.loc
 
     @vector_loc.setter
-    def vector_loc(self, loc: str) -> None:
+    def vector_loc(self, loc) -> None:
         self.loc = loc
