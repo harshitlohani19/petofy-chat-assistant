@@ -9,3 +9,5 @@ chromatest/
 testdb/
 src/testing.py
 testchroma/
+src/designpattern.py
+main2.py
