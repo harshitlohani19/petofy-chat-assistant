@@ -4,7 +4,7 @@ class ChunkSplitter(BaseSplitter):
     def __init__(self):
         self.chunks_size = 0
 
-    def chunk_size(self, chunks_size: int) -> int:
+    def chunk_size(self, chunks_size) -> int:
         self.chunks_size = chunks_size
         return self.chunks_size
 

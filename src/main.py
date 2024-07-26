@@ -14,7 +14,7 @@ class FlowControl(BaseVector):
         self.emb_fun = None
         self.splitter = None
 
-    def splitting_algo(self, chunks_size: int) -> None:
+    def splitting_algo(self, chunks_size) -> None:
         self.chunks_size = chunks_size
         self.splitter = ChunkSplitter()
         self.splitter.chunk_size(chunks_size)
