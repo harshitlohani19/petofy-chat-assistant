@@ -10,7 +10,7 @@ class VectorDB(BaseStorage):
     # def __init__(self):
     splitter_instance = ChunkSplitter()
 
-    def db_creation(self, splitter_instance, db_name, dbloc, emb_fun) -> None:
+    def chroma_db_creation(self, splitter_instance, db_name, dbloc, emb_fun) -> None:
         client = chromadb.PersistentClient(path=f"{dbloc}")
         split_results = splitter_instance.set_splitter(splitter_instance.splitter, data)
 

@@ -26,7 +26,7 @@ class FlowControl(BaseVector):
 
     def storage_creation(self) -> None:
         vec_db = VectorDB()
-        db=vec_db.set_database(self.splitter, self.vector_name, self.vector_loc, self.emb_fun, vec_db.db_creation)
+        db=vec_db.set_database(self.splitter, self.vector_name, self.vector_loc, self.emb_fun, vec_db.chroma_db_creation)
         # test = db.peek()["embeddings"]
         # print(test)
 
