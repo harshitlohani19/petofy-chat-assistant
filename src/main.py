@@ -1,6 +1,6 @@
 from base_vector import BaseVector
 from user_splitter import ChunkSplitter
-from user_embedder import sen_transformer_embedder
+from user_embedder import meta_embedder
 from user_storage import VectorDB
 from loader import load_json
 
@@ -21,7 +21,7 @@ class FlowControl(BaseVector):
         self.splitter.chunk_size(chunks_size)
 
     def gen_embeddings(self):
-        embedder_inst = sen_transformer_embedder()
+        embedder_inst = meta_embedder()
         
         self.emb_fun = embedder_inst.set_embedder(embedder_inst.embedder)
         return self.emb_fun

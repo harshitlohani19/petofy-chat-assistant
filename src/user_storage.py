@@ -31,7 +31,10 @@ class VectorDB(BaseStorage):
                 print("Updating the existing collection.")
                 collection = client.get_collection(name=db_name)
                 for chunk, chunk_id in split_results:
-                    embeddings = emb_fun.encode(chunk)  # for sentence transformer
+                    #embeddings = emb_fun.encode(chunk)  # for sentence transformer
+                    # Generate embeddings
+                    embeddings = emb_fun.get_sentence_vector(chunk)
+                    
                     collection.add(documents=chunk, ids=chunk_id,embeddings=embeddings)
                 print("Updated")
                 return collection
@@ -44,7 +47,12 @@ class VectorDB(BaseStorage):
             )
             # Add new chunks to the collection
             for chunk, chunk_id in split_results:
-                embeddings = emb_fun.encode(chunk)
+                #embeddings = emb_fun.encode(chunk)
+                embeddings=[]
+                for sentence in chunk:
+                    cleaned_sentence = ' '.join(str(sentence).split())
+                    embedding = emb_fun.get_sentence_vector(cleaned_sentence)
+                    embeddings.append(embedding.tolist())
                 #print(embeddings)
                 collection.add(documents=chunk, ids=chunk_id, embeddings=embeddings)
 

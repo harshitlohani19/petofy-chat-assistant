@@ -11,3 +11,5 @@ src/testing.py
 testchroma/
 src/designpattern.py
 main2.py
+cc.en.300.bin
+cc.en.300.bin.gz
