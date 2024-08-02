@@ -31,20 +31,25 @@ class VectorDB(BaseStorage):
                 print("Updating the existing collection.")
                 collection = client.get_collection(name=db_name)
                 for chunk, chunk_id in split_results:
-                    collection.add(documents=chunk, ids=chunk_id)
+                    embeddings = emb_fun.encode(chunk)  # for sentence transformer
+                    collection.add(documents=chunk, ids=chunk_id,embeddings=embeddings)
                 print("Updated")
                 return collection
         else:
             # Create a new collection if it does not exist
             print("Creating a new collection.")
+            
             collection = client.create_collection(
-                name=db_name, embedding_function=emb_fun
+                name=db_name
             )
             # Add new chunks to the collection
             for chunk, chunk_id in split_results:
-                collection.add(documents=chunk, ids=chunk_id)
+                embeddings = emb_fun.encode(chunk)
+                #print(embeddings)
+                collection.add(documents=chunk, ids=chunk_id, embeddings=embeddings)
 
             print("success.")
+            print(collection.get(include=['embeddings']))
             return collection
 
     def set_database(self, splitter, db_name, dbloc, emb_fun, callback):
