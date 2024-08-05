@@ -2,3 +2,12 @@
 venv/
 *.pyc
 __pycache__/
+chromadb/
+vector_data.json
+chromadb/chroma.sqlite3
+chromatest/
+testdb/
+src/testing.py
+testchroma/
+src/designpattern.py
+main2.py

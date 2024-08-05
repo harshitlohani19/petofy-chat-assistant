@@ -18,8 +18,13 @@ def load_json():
                     data = json.load(f)
                     # Append to the combined list
                     combined_data.extend(data)
-    # print(combined_data)
-    return combined_data
+    # print((combined_data))
+    combined_text = []
+    # Combine Prompt and Response into a single document
+    for item in data:
+        for key, value in item.items():
+            combined_text.append(str(value))  # Ensure all values are strings
+    return combined_data, combined_text
 
 
 load_json()
